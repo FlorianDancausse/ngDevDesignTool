@@ -1,0 +1,21 @@
+@import "../../assets/styles/utils";
+
+:host {
+  display: flex;
+
+  .panel {
+    position: relative;
+    width: 320px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-background;
+    color: $primary-white;
+    padding: 16px;
+    border: 2px solid $discord-purple;
+  }
+
+  .download-btn {
+    margin: 16px 0 0 16px;
+  }
+}

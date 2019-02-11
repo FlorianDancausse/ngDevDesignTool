@@ -1,0 +1,32 @@
+@import "../assets/styles/utils";
+
+:host {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  > app-basic-template {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .title {
+    margin-bottom: 4px;
+    font-weight: lighter;
+  }
+
+  p span {
+    color: $primary-red;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    width: 80px;
+    height: 80px;
+  }
+}
