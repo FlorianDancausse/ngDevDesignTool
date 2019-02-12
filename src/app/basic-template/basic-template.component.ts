@@ -9,9 +9,20 @@ import fileSaver from 'file-saver';
 })
 export class BasicTemplateComponent {
   @Input() name = 'untitled';
-  @Input() color = '#FFFFFF';
+  @Input() color = 'discordPurple';
+  colorsList: object = {};
 
   constructor() {
+    this.colorsList = {
+      darkBackground: '#30343F',
+      primaryWhite: '#FFF0EF',
+      primaryRed: '#F4989C',
+      twitchPurple: '#4b367c',
+      discordPurple: '#7289DA',
+      peach: '#EFC69B',
+      oceanGreen: '#63B995',
+      yellow: '#F5CB5C'
+    };
   }
 
   convertToImage(dom) {

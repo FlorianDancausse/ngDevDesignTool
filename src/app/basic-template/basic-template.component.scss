@@ -6,13 +6,13 @@
   .panel {
     position: relative;
     width: 320px;
-    height: 125px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     background-color: $dark-background;
     color: $primary-white;
+    box-sizing: border-box;
     padding: 16px;
-    border: 2px solid $discord-purple;
   }
 
   .download-btn {
