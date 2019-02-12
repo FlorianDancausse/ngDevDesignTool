@@ -1,6 +1,8 @@
 import {Component, Input} from '@angular/core';
 import domToImage from 'dom-to-image';
 import fileSaver from 'file-saver';
+import variables from '!!sass-variable-loader!./../../assets/styles/utils.scss';
+
 
 @Component({
   selector: 'app-basic-template',
@@ -10,19 +12,9 @@ import fileSaver from 'file-saver';
 export class BasicTemplateComponent {
   @Input() name = 'untitled';
   @Input() color = 'discordPurple';
-  colorsList: object = {};
+  colorsList: object = variables;
 
   constructor() {
-    this.colorsList = {
-      darkBackground: '#30343F',
-      primaryWhite: '#FFF0EF',
-      primaryRed: '#F4989C',
-      twitchPurple: '#4b367c',
-      discordPurple: '#7289DA',
-      peach: '#EFC69B',
-      oceanGreen: '#63B995',
-      yellow: '#F5CB5C'
-    };
   }
 
   convertToImage(dom) {
