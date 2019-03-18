@@ -1,4 +1,4 @@
-<div class="panel" [ngStyle]="{'border': '2px solid' + colorsList[color]}" #panel>
+<div class="panel border {{borderColor}}" #panel>
   <ng-content></ng-content>
 </div>
 <button class="download-btn" (click)="convertToImage(panel)">Download</button>

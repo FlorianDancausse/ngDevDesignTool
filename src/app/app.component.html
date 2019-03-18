@@ -1,21 +1,38 @@
-<app-basic-template [name]="'config'" [color]="'smoothRed'">
+<app-basic-template class="smoothRed" [borderColor]="'smoothRed'" [name]="'config'">
   <h2 class="title">CONFIG</h2>
-  <p><span>Carte mère</span> MSI Z370-A PRO</p>
-  <p><span>GPU</span> Intel Core i5-8600K</p>
-  <p><span>CPU</span> MSI GeForce GTX 1070 Ti Aero</p>
-  <p><span>RAM</span> 2x8 Go DDR4 2666 MHz Corsair</p>
+  <p><span class="smoothRed">Carte mère</span> MSI Z370-A PRO</p>
+  <p><span class="smoothRed">GPU</span> Intel Core i5-8600K</p>
+  <p><span class="smoothRed">CPU</span> MSI GeForce GTX 1070 Ti Aero</p>
+  <p><span class="smoothRed">RAM</span> 2x8 Go DDR4 2666 MHz Corsair</p>
 </app-basic-template>
 
-<app-basic-template [name]="'gear'" [color]="'white'">
+<app-basic-template class="cherry" [borderColor]="'cherry'" [name]="'gear'">
   <h2 class="title">GEAR</h2>
-  <p><span>Caméra</span> Logitech C920</p>
-  <p><span>Casque</span> Steelseries Arctis 5</p>
-  <p><span>Clavier</span> SteelSeries Apex M750</p>
-  <p><span>Souris</span> &nbsp; Steelseries Rival 110</p>
+  <p><span class="cherry">Caméra</span> Logitech C920</p>
+  <p><span class="cherry">Casque</span> Steelseries Arctis 5</p>
+  <p><span class="cherry">Clavier</span> SteelSeries Apex M750</p>
+  <p><span class="cherry">Souris</span> &nbsp; Steelseries Rival 110</p>
 </app-basic-template>
 
-<app-basic-template [name]="'discord'">
+<app-basic-template [borderColor]="'discordPurple'" [name]="'discord'">
   <h2 class="title">DISCORD</h2>
-  <p>L'endroit indispensable pour chatter et parler vous et moi</p>
-  <img src="../assets/images/discord-logo-color.png" alt="discord logo">
+  <p>L'endroit indispensable pour discuter vous et moi.</p>
+  <img src="../assets/images/discord-logo-color.png" alt="discord logo" class="discord-logo"/>
+</app-basic-template>
+
+<app-basic-template [borderColor]="'yellow'" [name]="'donations'">
+  <h2 class="title">DONATIONS</h2>
+  <p>Si tu souhaites me soutenir dans mes streams.</p>
+  <img src="../assets/images/cookie.png" alt="cookie"/>
+</app-basic-template>
+
+<app-basic-template [borderColor]="'electricBlue'" [name]="'regles'">
+  <h2 class="title">REGLES</h2>
+  <p>
+    Evitez le language SMS
+    <br>
+    Pas d'insultes, pas de spam.
+    <br>
+    Pas de pub ni de liens qui n'ont rien à faire là.
+  </p>
 </app-basic-template>

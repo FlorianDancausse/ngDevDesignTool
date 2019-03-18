@@ -1,9 +1,62 @@
 $dark-background: #30343F;
 $primary-white: #FFF0EF;
-$primary-red: #F4989C;
 
-//$twitchPurple: #4b367c;
-//$discordPurple: #7289DA;
-//$peach: #EFC69B;
-//$oceanGreen: #63B995;
-//$yellow: #F5CB5C;
+$smoothRed: #F4989C;
+$cherry: #FB787E;
+$twitchPurple: #4b367c;
+$discordPurple: #7289DA;
+$electricBlue: #7CB0C6;
+$oceanGreen: #63B995;
+$yellow: #F5CB5C;
+
+* {
+  color: $primary-white;
+}
+
+span {
+  &.smoothRed {
+    color: $smoothRed;
+  }
+  &.cherry {
+    color: $cherry;
+  }
+  &.twitchPurple {
+    color: $twitchPurple;
+  }
+  &.discordPurple {
+    color: $discordPurple;
+  }
+  &.electricBlue {
+    color: $electricBlue;
+  }
+  &.oceanGreen {
+    color: $oceanGreen;
+  }
+  &.yellow {
+    color: $yellow;
+  }
+}
+
+.border {
+  &.smoothRed {
+    border: 2px solid $smoothRed;
+  }
+  &.cherry {
+    border: 2px solid $cherry;
+  }
+  &.twitchPurple {
+    border: 2px solid $twitchPurple;
+  }
+  &.discordPurple {
+    border: 2px solid $discordPurple;
+  }
+  &.electricBlue {
+    border: 2px solid $electricBlue;
+  }
+  &.oceanGreen {
+    border: 2px solid $oceanGreen;
+  }
+  &.yellow {
+    border: 2px solid $yellow;
+  }
+}

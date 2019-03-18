@@ -9,16 +9,7 @@ import fileSaver from 'file-saver';
 })
 export class BasicTemplateComponent {
   @Input() name = 'untitled';
-  @Input() color = 'discordPurple';
-  colorsList: object = {
-    white: '#FFF0EF',
-    smoothRed: '#F4989C',
-    twitchPurple: '#4b367c',
-    discordPurple: '#7289DA',
-    peach: '#EFC69B',
-    oceanGreen: '#63B995',
-    yellow: '#F5CB5C'
-  };
+  @Input() borderColor = '';
 
   constructor() {
   }

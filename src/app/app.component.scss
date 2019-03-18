@@ -18,15 +18,16 @@
     font-weight: lighter;
   }
 
-  p span {
-    color: $primary-red;
-  }
-
   img {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     right: 8px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+
+    &.discord-logo {
+      width: 70px;
+      height: 70px;
+    }
   }
 }
